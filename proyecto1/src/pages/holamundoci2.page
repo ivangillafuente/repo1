@@ -1,0 +1,28 @@
+<apex:page standardController="Account">
+<style>
+.activeTab{
+backGroundColor:#FFFFFF;
+Color:#000000;
+}
+.inactiveTab{
+backGroundColor:#000000;
+Color:#FFFFFF;
+}
+</style>
+<!-- Begin Default Content REMOVE THIS -->
+
+<apex:pageBlock title="Hola {!$User.FirstName}">Congratulations
+This is your new Page CI2
+{!$User.FirstName}
+{!Account.Name} feo</apex:pageBlock>
+
+<apex:tabPanel tabClass="activeTab" inactiveTabClass="inactiveTab">
+	<apex:tab label="detalles" id="tabDetalle">
+		<apex:detail relatedList="false"/>
+	</apex:tab>
+	<apex:tab label="contactos" id="tabContactos">
+		<apex:relatedList subject="{!Account}" list="contacts"/>
+	</apex:tab>
+</apex:tabPanel>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>
