@@ -12,7 +12,7 @@ Color:#FFFFFF;
 <!-- Begin Default Content REMOVE THIS -->
 
 <apex:pageBlock title="Hola {!$User.FirstName}">Congratulations
-This is your new Page
+This is your new Page modificado por ivan
 {!$User.FirstName}
 {!Account.Name} feo</apex:pageBlock>
 
